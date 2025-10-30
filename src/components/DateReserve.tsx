@@ -91,10 +91,10 @@ export default function DateReserve(){
 
       {/* ปุ่มส่งฟอร์ม */}
       <button
-        type="button"
+        type="submit"
         className="bg-sky-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-md shadow-md"
         onClick={(e) => {
-          e.preventDefault();
+          //e.preventDefault();
           makeBooking();
           console.log("makeBooking called", { vid, venue, reserveDate, name, tel });
         }}
